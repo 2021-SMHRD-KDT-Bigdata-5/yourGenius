@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.urgenius.mapper.fillMapper">
+
+
+	<insert id="memberInsert" parameterType="kr.urgenius.mapper.fillVO">  <!-- parameterType: 값이 넘어오는 데이터의 타입을 걸떄 resultType : select할때 -->
+		insert into member(id, pw, name, birth)
+		values(#{id},#{pw},#{name},#{birth})
+	</insert>
+
+</mapper>
